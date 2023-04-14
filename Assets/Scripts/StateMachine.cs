@@ -13,6 +13,7 @@ public class StateMachine : MonoBehaviour
         climbing
     }
 
+
     public State currentState = State.idle;
 
     Vector3 lastPosition;
@@ -72,7 +73,7 @@ public class StateMachine : MonoBehaviour
 
     void Idle()
     {
-        Debug.Log("I am idle");
+        print("I am idle");
         if (lastPosition != transform.position)
         {
             currentState = State.walking;
